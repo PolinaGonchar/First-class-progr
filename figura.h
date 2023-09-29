@@ -7,6 +7,7 @@ class Figure{
 protected:
     double perimeter;
     double area;
+    double side;
 
 public:
     void display();
@@ -15,9 +16,6 @@ public:
 };
 
 class Square : public Figure{
-protected:
-    double side;
-
 public:
     Square(double);
     Square();

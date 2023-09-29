@@ -1,7 +1,7 @@
 #include "figura.h"
 
 void Figure::display(){
-    cout << "Perimeter: " << this->perimeter << " and area: " << this->area << endl;
+    cout << "Side : " << this->side << " Perimeter: " << this->perimeter << " and area: " << this->area << endl;
 }
 
 double Figure::calculatePerimeter(){
@@ -27,13 +27,13 @@ Square::Square(double side){
 }
 
 double Square::calculatePerimeter(){
-    cout << "Class Square calculating perimeter: " << endl;
+    //cout << "Class Square calculating perimeter: " << endl;
     double p = this->side * 4;
     return p;
 }
 
 double Square::calculateArea(){
-    cout << "Class Square calculating area: " << endl;
+    //cout << "Class Square calculating area: " << endl;
     double a = this->side * this->side;
     return a;
 }
